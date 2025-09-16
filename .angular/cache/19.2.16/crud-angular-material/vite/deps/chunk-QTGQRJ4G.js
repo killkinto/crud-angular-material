@@ -2,7 +2,7 @@ import {
   DOCUMENT,
   isPlatformBrowser,
   isPlatformServer
-} from "./chunk-256YEQI2.js";
+} from "./chunk-FZM6MPGW.js";
 import {
   APP_BOOTSTRAP_LISTENER,
   BehaviorSubject,
@@ -16,7 +16,6 @@ import {
   Observable,
   PLATFORM_ID,
   Subject,
-  __spreadValues,
   asapScheduler,
   debounceTime,
   distinctUntilChanged,
@@ -38,7 +37,10 @@ import {
   ɵɵdefineNgModule,
   ɵɵdirectiveInject,
   ɵɵinject
-} from "./chunk-4GQNXL7P.js";
+} from "./chunk-ACM7XIUF.js";
+import {
+  __spreadValues
+} from "./chunk-WDMUDEB6.js";
 
 // node_modules/@angular/flex-layout/fesm2020/angular-flex-layout-_private-utils.mjs
 function applyCssPrefixes(target) {
@@ -2191,4 +2193,4 @@ export {
    * found in the LICENSE file at https://angular.io/license
    *)
 */
-//# sourceMappingURL=chunk-GEZL5I5W.js.map
+//# sourceMappingURL=chunk-QTGQRJ4G.js.map

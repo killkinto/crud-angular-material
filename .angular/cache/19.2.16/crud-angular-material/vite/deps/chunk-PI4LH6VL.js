@@ -11,11 +11,11 @@ import {
   isFlowHorizontal,
   multiply,
   validateBasis
-} from "./chunk-GEZL5I5W.js";
+} from "./chunk-QTGQRJ4G.js";
 import {
   BidiModule,
   Directionality
-} from "./chunk-7AQ3RK2W.js";
+} from "./chunk-AOQTKODF.js";
 import {
   Directive,
   ElementRef,
@@ -25,8 +25,6 @@ import {
   NgModule,
   NgZone,
   Subject,
-  __spreadProps,
-  __spreadValues,
   setClassMetadata,
   takeUntil,
   ɵɵInheritDefinitionFeature,
@@ -37,7 +35,11 @@ import {
   ɵɵdirectiveInject,
   ɵɵgetInheritedFactory,
   ɵɵinject
-} from "./chunk-4GQNXL7P.js";
+} from "./chunk-ACM7XIUF.js";
+import {
+  __spreadProps,
+  __spreadValues
+} from "./chunk-WDMUDEB6.js";
 
 // node_modules/@angular/flex-layout/fesm2020/angular-flex-layout-flex.mjs
 var LayoutStyleBuilder = class extends StyleBuilder {
@@ -1528,4 +1530,4 @@ export {
    * found in the LICENSE file at https://angular.io/license
    *)
 */
-//# sourceMappingURL=chunk-CSP2HQNA.js.map
+//# sourceMappingURL=chunk-PI4LH6VL.js.map

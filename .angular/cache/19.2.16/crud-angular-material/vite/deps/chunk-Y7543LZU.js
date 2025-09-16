@@ -4,7 +4,7 @@ import {
   EventManager,
   EventManagerPlugin,
   SharedStylesHost
-} from "./chunk-ULN5BKAK.js";
+} from "./chunk-XXU66YKN.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -15,7 +15,7 @@ import {
   isPlatformServer,
   parseCookieValue,
   setRootDomAdapter
-} from "./chunk-256YEQI2.js";
+} from "./chunk-FZM6MPGW.js";
 import {
   APP_BOOTSTRAP_LISTENER,
   ApplicationModule,
@@ -50,9 +50,6 @@ import {
   Version,
   XSS_SECURITY_URL,
   ZONELESS_ENABLED,
-  __async,
-  __objRest,
-  __spreadValues,
   _global,
   _sanitizeHtml,
   _sanitizeUrl,
@@ -96,7 +93,12 @@ import {
   ɵɵdefineInjector,
   ɵɵdefineNgModule,
   ɵɵinject
-} from "./chunk-4GQNXL7P.js";
+} from "./chunk-ACM7XIUF.js";
+import {
+  __async,
+  __objRest,
+  __spreadValues
+} from "./chunk-WDMUDEB6.js";
 
 // node_modules/@angular/platform-browser/fesm2022/browser-0WrrQdE0.mjs
 var BrowserDomAdapter = class _BrowserDomAdapter extends DomAdapter {
@@ -3744,4 +3746,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-KYANYCLK.js.map
+//# sourceMappingURL=chunk-Y7543LZU.js.map

@@ -1,6 +1,6 @@
 <div fxLayout="row" fxLayoutAlign="center">
     <div fxLayout="column" fxFlex="900px">
-        <form class="mt-60" #clientesFrm="ngForm">
+        <form class="mt-60" #clientesFrm="ngForm" (ngSubmit)="salvar()">
             <mat-card>
                 <mat-card-header>
                     <mat-card-title>Dados Pessoais</mat-card-title>
@@ -10,7 +10,11 @@
                         <div fxLayout="column" fxFlex="800px">
                             <mat-form-field class="full-width">
                                 <mat-label>Nome:</mat-label>
-                                <input type="text" placeholder="José da Silva" matInput />
+                                <input 
+                                    type="text" 
+                                    [(ngModel)]="cliente.nome"
+                                    name="nome"
+                                    placeholder="José da Silva" matInput />
                             </mat-form-field>
                         </div>
                     </div>
@@ -19,7 +23,12 @@
                         <div fxLayout="column" fxFlex="800px">
                             <mat-form-field class="full-width">
                                 <mat-label>E-mail:</mat-label>
-                                <input type="email" placeholder="Digite seu e-mail" matInput />
+                                <input 
+                                    type="email" 
+                                    [(ngModel)]="cliente.email"
+                                    name="email"
+                                    placeholder="Digite seu e-mail" 
+                                    matInput />
                             </mat-form-field>
                         </div>
                     </div>
@@ -28,7 +37,12 @@
                         <div fxLayout="column" fxFlex="400px">
                             <mat-form-field class="full-width">
                                 <mat-label>CPF:</mat-label>
-                                <input type="text" placeholder="Digite seu CPF." matInput />
+                                <input 
+                                    type="text" 
+                                    [(ngModel)]="cliente.cpf"
+                                    name="cpf"
+                                    placeholder="Digite seu CPF." 
+                                    matInput />
                             </mat-form-field>
                         </div>
                     </div>
@@ -37,15 +51,27 @@
                         <div fxLayout="column" fxFlex="400px">
                             <mat-form-field class="full-width">
                                 <mat-label>Data de nascimento:</mat-label>
-                                <input type="text" placeholder="Digite sua data de nascimento" matInput />
+                                <input 
+                                    type="text" 
+                                    [(ngModel)]="cliente.dataNascimento"
+                                    name="dataNascimento"
+                                    placeholder="Digite sua data de nascimento" matInput />
                             </mat-form-field>
                         </div>
                     </div>
                 </mat-card-content>
                 <mat-card-actions>
-                    <button mat-flat-button color="primary">
-                        <mat-icon fontIcon="save"></mat-icon>
+                    <button mat-flat-button color="primary" type="submit">
+                        <mat-icon fontIcon="save" />
                         Salvar
+                    </button>
+                    <button mat-flat-button color="primary">
+                        <mat-icon fontIcon="refresh"></mat-icon>
+                        Atualizar
+                    </button>
+                    <button mat-flat-button color="accent" class="ml-5">
+                        <mat-icon fontIcon="backspace"></mat-icon>
+                        Limpar
                     </button>
                 </mat-card-actions>
             </mat-card>
