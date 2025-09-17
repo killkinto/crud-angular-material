@@ -1,13 +1,13 @@
 import {
+  coerceBooleanProperty
+} from "./chunk-CXD4D2ML.js";
+import {
   BaseDirective2,
   CoreModule,
   MediaMarshaller,
   StyleBuilder,
   StyleUtils
-} from "./chunk-QTGQRJ4G.js";
-import {
-  coerceBooleanProperty
-} from "./chunk-YQZPA3F5.js";
+} from "./chunk-EOGRYTNW.js";
 import {
   Directive,
   ElementRef,
@@ -22,7 +22,7 @@ import {
   ɵɵdefineNgModule,
   ɵɵdirectiveInject,
   ɵɵgetInheritedFactory
-} from "./chunk-ACM7XIUF.js";
+} from "./chunk-4I4QAZWQ.js";
 
 // node_modules/@angular/flex-layout/fesm2020/angular-flex-layout-grid.mjs
 var ROW_DEFAULT = "stretch";
@@ -1616,4 +1616,4 @@ export {
    * found in the LICENSE file at https://angular.io/license
    *)
 */
-//# sourceMappingURL=chunk-KHUFWSF3.js.map
+//# sourceMappingURL=chunk-XR5KF4WW.js.map

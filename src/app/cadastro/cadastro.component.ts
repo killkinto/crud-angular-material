@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -7,6 +7,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 import { Cliente } from './cliente';
+import { ClienteService } from '../cliente.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-cadastro',
@@ -22,11 +24,32 @@ import { Cliente } from './cliente';
   templateUrl: './cadastro.component.html',
   styleUrl: './cadastro.component.scss'
 })
-export class CadastroComponent {
+export class CadastroComponent implements OnInit {
 
     cliente: Cliente = Cliente.newClient();
+    atualizando: boolean = false
+
+    constructor(
+      private service: ClienteService,
+      private route: ActivatedRoute
+    ) {    }
+
+    ngOnInit(): void {
+      this.route.queryParamMap.subscribe((query: any) => {
+        const params = query['params']
+        const id = params['id']
+        if (id) {
+            let cliente = this.service.buscarClientePorId(id);
+            if (cliente) {
+              this.atualizando = true;
+              this.cliente = cliente;
+            }
+        }
+      })
+    }
 
     salvar() {
-      console.log("Dados do cliente", this.cliente)
+      this.service.salvar(this.cliente);
+      this.cliente = Cliente.newClient();
     }
 }

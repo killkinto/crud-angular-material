@@ -1,4 +1,8 @@
 import {
+  BidiModule,
+  Directionality
+} from "./chunk-PYPIILD4.js";
+import {
   BaseDirective2,
   CoreModule,
   LAYOUT_CONFIG,
@@ -11,11 +15,7 @@ import {
   isFlowHorizontal,
   multiply,
   validateBasis
-} from "./chunk-QTGQRJ4G.js";
-import {
-  BidiModule,
-  Directionality
-} from "./chunk-AOQTKODF.js";
+} from "./chunk-EOGRYTNW.js";
 import {
   Directive,
   ElementRef,
@@ -35,7 +35,7 @@ import {
   ɵɵdirectiveInject,
   ɵɵgetInheritedFactory,
   ɵɵinject
-} from "./chunk-ACM7XIUF.js";
+} from "./chunk-4I4QAZWQ.js";
 import {
   __spreadProps,
   __spreadValues
@@ -1530,4 +1530,4 @@ export {
    * found in the LICENSE file at https://angular.io/license
    *)
 */
-//# sourceMappingURL=chunk-PI4LH6VL.js.map
+//# sourceMappingURL=chunk-AJHM2SSZ.js.map

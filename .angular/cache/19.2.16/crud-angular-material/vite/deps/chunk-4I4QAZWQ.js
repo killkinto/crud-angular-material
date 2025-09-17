@@ -29780,6 +29780,7 @@ export {
   Subject,
   BehaviorSubject,
   asapScheduler,
+  animationFrameScheduler,
   EMPTY,
   from,
   of,
@@ -30342,4 +30343,4 @@ export {
    * found in the LICENSE file at https://angular.dev/license
    *)
 */
-//# sourceMappingURL=chunk-ACM7XIUF.js.map
+//# sourceMappingURL=chunk-4I4QAZWQ.js.map
