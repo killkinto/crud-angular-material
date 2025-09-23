@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCardModule } from '@angular/material/card';
@@ -6,6 +6,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule, MatButton } from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { FormsModule } from '@angular/forms';
 import { ClienteService } from '../cliente.service';
 import { Cliente } from '../cadastro/cliente';
@@ -22,6 +23,7 @@ export class ConsultaComponent implements OnInit {
   nomeBusca: string = '';
   clientes: Cliente[] =  [];
   colunasTable: string[] = ["id", "nome", "cpf", "dataNascimento", "email", "acoes"];
+  private snack: MatSnackBar = inject(MatSnackBar)
 
   constructor(
     private service: ClienteService,
@@ -37,15 +39,16 @@ export class ConsultaComponent implements OnInit {
   }
 
   preparaEditar(id: string) {
-      this.router.navigate(['/cadastro'], { queryParams: { "id": id}})
+      this.router.navigate(['/cadastro'], { queryParams: { "id": id}});
   }
 
     preparaDeletar(cliente: Cliente) {
-      cliente.deletando = true
+      cliente.deletando = true;
     }
 
     deletar(cliente: Cliente) {
       this.service.deletar(cliente);
-      this.clientes = this.clientes.filter(c => c.id != cliente.id)
+      this.clientes = this.clientes.filter(c => c.id != cliente.id);
+      this.snack.open("Usário deletado!", "Ok");
     }
 }
